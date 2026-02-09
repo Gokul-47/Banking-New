@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Zenith Finance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-404 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-navy) 100%);
+            padding: 20px;
+        }
+
+        .error-content {
+            text-align: center;
+            color: white;
+            max-width: 600px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .error-content h1 {
+            font-size: 120px;
+            font-weight: 700;
+            margin: 0;
+            color: var(--primary-gold);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .error-content h2 {
+            font-size: 32px;
+            margin: 20px 0 15px 0;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .error-content p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0 0 30px 0;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 40px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary-gold);
+            border-color: var(--primary-gold);
+            color: var(--primary-navy);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        :root {
+            --primary-navy: #0f1c2e;
+            --secondary-navy: #1a2a47;
+            --primary-gold: #d4af37;
+            --secondary-gold: #c9a227;
+            --accent-text: #9ca3af;
+            --light-bg: #f8f9fa;
+            --border-color: #2d3e52;
+        }
+    </style>
+</head>
+<body>
+    <!-- 404 Page -->
+    <div class="page-404" id="page404">
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <p>The requested resource is not available. Please return to our homepage or contact your relationship manager for assistance.</p>
+            <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+        </div>
+    </div>
+
+    <script>
+        // Add any page-specific functionality here if needed
+    </script>
+</body>
+</html>
